@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/numberET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Number"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/callIV"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/phone"
+        android:layout_below="@+id/numberET"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/mailid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Mail Address"
+        android:layout_below="@+id/callIV"
+        android:layout_marginTop="60dp"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:layout_centerHorizontal="true"/>
+    <EditText
+        android:id="@+id/subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Mailing Subject"
+        android:layout_below="@+id/mailid"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Mailing Boy"
+        android:layout_below="@+id/subject"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/mailIV"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/mail"
+        android:layout_below="@+id/body"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
